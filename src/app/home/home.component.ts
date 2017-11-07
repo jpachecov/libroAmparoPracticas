@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit{
 
   ngOnInit():void {
     //this.libroService.getLibro().then(libro => this.libro = libro);
-    this.libro = this.libroService.getLibroAmparo("");
+    this.libro = this.libroService.getLibroAmparo("practicas");
   }
 
 	constructor(private libroService: LibroService){}

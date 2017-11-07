@@ -1159,4 +1159,29 @@ router.get('/libro', (req, res) => {
 
 });
 
+// Get users
+router.get('/practicas', (req, res) => {
+/*
+    connection((db) => {
+        db.collection('users')
+            .find()
+            .toArray()
+            .then((users) => {
+                response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+            });
+    });
+    */
+
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    response.data = libroPracticas;
+    res.json(response);
+
+});
+
+
 module.exports = router;

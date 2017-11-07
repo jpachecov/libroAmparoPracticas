@@ -28,8 +28,6 @@ export class LibroService {
 			libro = libroPracticas;
 		}
 
-
-
 		return libro;
 	}
 	getCapitulos():Promise<Capitulo[]>{
@@ -42,7 +40,7 @@ export class LibroService {
 
 	getLibro(): Promise<Libro>{
 
-		return Promise.resolve(libroAmparo);
+		return Promise.resolve(libroPracticas);
 /*
 	  return this.http.get(this.api_url + "/libro")
          .toPromise()

@@ -65,9 +65,9 @@ export class AppComponent implements OnInit{
 
   // init cycle 
   ngOnInit() : void {
-    this.libro = this.libroService.getLibroAmparo("");
+    this.libro = this.libroService.getLibroAmparo("practicas");
     //this.libroService.getLibro().then(libro => this.libro = libro);
-    var color_principal = "#822727";
+    var color_principal = "#196C5C";
     $(".cont-pic").css("background", color_principal);
     $("footer").css("background", color_principal);
   }
