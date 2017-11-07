@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+	.contenido-capitulo {
+	    padding: 0 40px !important;
+	    padding-left: 40px !important;
+	}
+	.shadow {
+		padding-top: 85px;
+	}
+	#titulo-libro{
+		border-bottom: 2px solid #822727;
+	    font-size: 17px;
+
+	}
+	#edicion {
+		font-size: 12px;
+	}
+	#titulo-cap{
+	    font-size: 15px;
+	}	
+	#resumen {
+	    font-size: 12px;
+	}
+	#lista-archivos li a{
+		font-size: 12px;
+	}
+
+	#proceso img {
+	    display: block;
+	    width: 200px;
+	    margin: 0 auto;
+	}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1170px) {
+	.contenido-capitulo {
+		padding: 0 100px 350px var(--ancho-menu);
+	}
+	#proceso img {
+	    display: block;
+	    width: 300px;
+	    margin: 0 auto;
+	}	
+}

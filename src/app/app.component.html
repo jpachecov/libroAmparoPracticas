@@ -1,0 +1,68 @@
+<div class="container">
+	<!--<app-header></app-header>-->
+	<header class="menu-capitulos" (panstart)="onPanStart($event)" (panmove)="onPan($event)">
+		<div class="cont-pic">
+			<!-- <a href="/" class="picasso" [ngStyle]="{'background-image': 'url(assets/la_cocina.JPG)'}">
+			</a> -->			
+			<!--<a href="/" class="picasso"></a>			-->
+			<div class="imagenes-escudos">
+				<div id="logo-unam">
+					<a href="https://www.unam.mx/" target="blank">
+						<img src="assets/unam_blanco.png">			
+					</a>	
+
+				</div><!--
+				--><div id="logo-ciencias">
+					<a href="http://www.fciencias.unam.mx/" target="blank">
+						<img src="assets/fciencias_blanco.png">			
+					</a>
+				</div>
+			</div>
+		</div>
+		<i
+			class="fa fa-times close-menu" 
+			aria-hidden="true"
+			(tap)="onClose($event)"
+		></i>
+		<i class="fa fa-bars ham" (tap)="onOpen($event)" aria-hidden="true"></i>
+		<div class="cont-caps">
+			<h3>Capítulos</h3>
+			<div class="swiṕe-container" (panstart)="onPanStart($event)" (panmove)="onPan($event)">
+				<ul id="lista-capitulos">
+					<li *ngFor="let capitulo of libro.capitulos" (tap)="onSelectCap($event,capitulo)">
+						<span>
+						
+							<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
+							<a >{{capitulo.nombre}}</a>
+											
+						</span>
+					</li>
+
+					
+<!--
+					<li *ngFor="let capitulo of libro.capitulos">
+						<span>
+						
+							<label [class.cap-seleccion]="capitulo === capituloSel">{{capitulo.id}}</label>
+							<a [routerLink]="['capitulo']">{{capitulo.nombre}}</a>
+											
+
+						</span>
+					</li>-->
+
+				</ul>
+			</div>
+		</div>
+	</header><!--
+	-->
+	<div id="top-picasso">
+		<a href="/" id="picasso" [ngStyle]="{'background-image': 'url(assets/la-cocina.jpg)'}">
+		</a>		
+	</div>
+	<router-outlet></router-outlet>
+	<!--<contenido-capitulo [capituloSel]="capituloSel"></contenido-capitulo>--><!--
+	--><!--<detalle-profesora></detalle-profesora>-->
+</div>
+<footer>
+	<footer-profa></footer-profa>
+</footer>
