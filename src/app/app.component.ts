@@ -70,6 +70,12 @@ export class AppComponent implements OnInit{
     var color_principal = "#196C5C";
     $(".cont-pic").css("background", color_principal);
     $("footer").css("background", color_principal);
+    var that = this;
+    setTimeout(function(){
+      that.hideMenu();
+    }, 100);
+
+    
   }
   
 
