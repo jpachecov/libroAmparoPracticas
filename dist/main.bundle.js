@@ -153,7 +153,12 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.onSelect = function (capitulo) {
         this.capituloSel = capitulo;
-        this.router.navigate(['capitulo', this.capituloSel.id]);
+        if (capitulo.id === 0) {
+            this.router.navigate(['introduccion']);
+        }
+        else {
+            this.router.navigate(['capitulo', this.capituloSel.id]);
+        }
         var sub = this.router.routerState.root;
         console.log(sub);
     };
@@ -1023,6 +1028,9 @@ var CAPITULOS = [
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CAPITULOS_PRACTICAS; });
 var CAPITULOS_PRACTICAS = [
+    {
+        id: 0, nombre: 'Introducción', resumen: '', listaArchivos: null,
+    },
     { id: 1, nombre: 'Envío de mensajes al usuario',
         resumen: 'En este capítulo se presenta una práctica para que el alumno tenga un primer contacto con Java, que conozca la estructura de los programas en Java, aprenda a compilar programas, corregir errores y ejecutar programas a la vez que se ejercita en el uso de las instrucciones proporcionadas para mostrar mensajes al usuario en la pantalla de la computadora. ',
         listaArchivos: null
