@@ -43,3 +43,11 @@
 	    margin: 0 auto;
 	}	
 }
+
+@media (min-width: 1171px){
+	.contenido-capitulo {
+		padding: 0 70px 350px 350px;
+	}
+
+
+}

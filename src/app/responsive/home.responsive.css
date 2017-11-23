@@ -49,6 +49,41 @@
 
 @media (min-width: 701px) and (max-width: 1024px) {
 	.contenido-capitulo {
-	    padding-right: 50px;
+		padding-right: 50px !important;
+	
 	}
+
+
+	#lista-capitulos {
+		width: 100%;
+		padding: 0px !important;
+	}
+
+	#lista-capitulos li {
+		width: calc(33% - 1px);
+	}
+
+	#lista-capitulos li #nom {
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 1024px) {
+
+
+	#lista-capitulos {
+		width: 100%;
+		padding: 0px !important;
+	}
+
+	#lista-capitulos li {
+		width: calc(33% - 1px);
+	}
+
+	#lista-capitulos li #nom {
+		width: 100%;
+	}
+
+
 }
