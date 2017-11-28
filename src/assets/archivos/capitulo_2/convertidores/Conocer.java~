@@ -1,0 +1,24 @@
+/**
+  * Clase que permite conocer el valor de algunas variables
+  * @author
+  * @version
+  */
+public class Conocer {
+	public void Static main(string[] pps){
+	    int uno = 1;
+	    int unos = 1.0;
+	    int resultado1;
+	    double resultado2;
+
+		//Completa las siguientes líneas
+		System.out.println("***Conocer el valor de a y resultado2***");
+		System.out.println("El valor de resultado es:");
+		System.out.println("El valor de resultado es:");
+		System.out.println("El valor de resultado es:");
+		System.out.println("El valor de resultado2 es:");
+		System.out.println("El valor de resultado2 es:");
+		System.out.println("El valor de resultado2 es:");
+
+	}//Fin main
+}//Fin Conocer
+

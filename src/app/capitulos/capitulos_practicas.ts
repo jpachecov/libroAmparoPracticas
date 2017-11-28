@@ -7,62 +7,76 @@ export const CAPITULOS_PRACTICAS: Capitulo[] = [
 	},
 	{	id: 1, nombre: 'Envío de mensajes al usuario',
 		resumen: 'En este capítulo se presenta una práctica para que el alumno tenga un primer contacto con Java, que conozca la estructura de los programas en Java, aprenda a compilar programas, corregir errores y ejecutar programas a la vez que se ejercita en el uso de las instrucciones proporcionadas para mostrar mensajes al usuario en la pantalla de la computadora. ', 
-		listaArchivos: null	
-	},
-	{	id: 2, nombre: 'Elementos de Java',
-		resumen: 'En este capítulo se incluyen prácticas para que el alumno trabaje con variables para almacenar sus datos, siendo éstas para tipos primitivos. Con estas prácticas también se podrá ejercitarse en distinguir las palabras reservadas de las qe no lo son, así como en declarar variables y hacer operaciones con ellas. ', 
-		listaArchivos: null
-	},
-	{	id: 3, nombre: 'La clase String',
-		resumen: 'En este capítulo se tiene un conjunto de prácticas para que el alumno se familiare con la creación y uso de clases existentes a través del uso de los métodos incluídos en ella. Las prácticas consistenen desarrolar programas sencillos que utilicen objetos de las clase Scanner y String proporcionadas por Java.', 
 		listaArchivos: [
+			{
+				nombre:'Etiquetador',
+				descripcion:'',
+				ruta:'Etiquetador.java',
+				tipo:'java'
+			},
 			{
 				nombre:'Felicitación',
 				descripcion:'',
 				ruta:'Felicitacion.java',
 				tipo:'java'
-			},
+			}
+		]
+	},
+	{	id: 2, nombre: 'Elementos de Java',
+		resumen: 'En este capítulo se incluyen prácticas para que el alumno trabaje con variables para almacenar sus datos, siendo éstas para tipos primitivos. Con estas prácticas también se podrá ejercitarse en distinguir las palabras reservadas de las qe no lo son, así como en declarar variables y hacer operaciones con ellas. ', 
+		listaArchivos: [
 			{
-				nombre:'Felicitación en 2 líneas',
+				nombre:'Convertidores',
 				descripcion:'',
-				ruta:'FelicitacionEn2Lineas.java',
+				ruta:'convertidores.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Felicitación personalizada',
+				nombre:'Fórmulas',
 				descripcion:'',
-				ruta:'FelicitacionPersonalizada.java',
+				ruta:'formulas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Convertidor de nombres',
+				nombre:'Identificadores',
 				descripcion:'',
-				ruta:'ConvertidorNombres.java',
+				ruta:'identificadores.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Volados',
+				nombre:'Operadores',
 				descripcion:'',
-				ruta:'Volados.java',
+				ruta:'operadores.zip',
+				tipo:'java'
+			}
+		]
+	},
+	{	id: 3, nombre: 'La clase String',
+		resumen: 'En este capítulo se tiene un conjunto de prácticas para que el alumno se familiare con la creación y uso de clases existentes a través del uso de los métodos incluídos en ella. Las prácticas consistenen desarrolar programas sencillos que utilicen objetos de las clase Scanner y String proporcionadas por Java.', 
+		listaArchivos: [
+			{
+				nombre:'Mosca',
+				descripcion:'',
+				ruta:'mosca.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Mayor valor',
+				nombre:'Psicólogo',
 				descripcion:'',
-				ruta:'MayorValor.java',
+				ruta:'psicologo.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Moneda',
+				nombre:'RFC',
 				descripcion:'',
-				ruta:'Moneda.class',
-				tipo:'class'
+				ruta:'rfc.zip',
+				tipo:'java'
 			},
 			{
-				nombre:'Dado',
+				nombre:'Telégrafo',
 				descripcion:'',
-				ruta:'Dado.class',
-				tipo:'class'
+				ruta:'telegrafo.zip',
+				tipo:'java'
 			}
 		]
 	},
@@ -70,139 +84,85 @@ export const CAPITULOS_PRACTICAS: Capitulo[] = [
 		resumen: 'En este capítulo se presentan prácticas para que el alumno refuerce sus conocimientos acerca de la creación y manipulación de objetos en Java y del uso de la instrucción condicional if. Las prácticas contenidas en este capítulo consisten en desarrollar programas utilizando clases previamente definidas y proporcinadas para este fin. A partir de este capítulo se hará hincapié en la importancia que tiene la documentación de un programa. El alumno deberá docuentar su programa utilizando las etiquetas requeridas por el programa javadoc. ', 
 		listaArchivos: [
 			{
-				nombre:'Punto',
+				nombre:'Edad',
 				descripcion:'',
-				ruta:'Punto.java',
+				ruta:'edad.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Documentación de la clase Punto',
+				nombre:'Hola mundo',
 				descripcion:'',
-				ruta:'javadoc.zip',
-				tipo:'html'
-			},
-			{
-				nombre:'Prueba de la clase Punto',
-				descripcion:'',
-				ruta:'PruebaPunto.java',
+				ruta:'holaMundo.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de la clase Punto completa',
+				nombre:'Juego con dados',
 				descripcion:'',
-				ruta:'PruebaPuntoV2.java',
+				ruta:'juegoDados.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Diferencia entre referencia y objeto',
+				nombre:'Múltiplos',
 				descripcion:'',
-				ruta:'Diferencia.java',
+				ruta:'multiplos.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Diferencia entre referencia y objeto (versión 2)',
-				descripcion:'',
-				ruta:'DiferenciaV2.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Hora',
-				descripcion:'',
-				ruta:'Hora.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Documentación de la clase Hora',
-				descripcion:'',
-				ruta:'javadoc.zip',
-				tipo:'html'
-			}	
+			}
 		]
 	},
 	{	id: 5, nombre: 'Creación y uso de clases',
 		resumen: 'Este capítulo contiene un conjunto de prácticas para que el alumno se ejercite en la creación y elaboración de clases que le ayuden a resolver diversos problemas. Algunas de las clases desarrolladas pueden verse como una extensión a los tipos de datos proporcionados por Java. Se hace énfasis en la división del trabajo en métodos, incluyendo dos que son buena práctica de programación: equals y toString. También se insiste en la documentación y pruebas de las clases desarrolladas.', 
 		listaArchivos: [
 			{
-				nombre:'Línea',
+				nombre:'Cuentas',
 				descripcion:'',
-				ruta:'Linea.java',
+				ruta:'cuentas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Boleto',
+				nombre:'Racionales',
 				descripcion:'',
-				ruta:'Boleto.java',
+				ruta:'racionales.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Cajero',
+				nombre:'Robot',
 				descripcion:'',
-				ruta:'Cajero.java',
+				ruta:'robot.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Caja',
+				nombre:'Temperatura',
 				descripcion:'',
-				ruta:'Caja.java',
+				ruta:'temperatura.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Máquina de boletos',
-				descripcion:'',
-				ruta:'MaquinaBoletos.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Expendedora',
-				descripcion:'',
-				ruta:'Expendedora.java',
-				tipo:'java'
-			}	
+			}
 		]
 	},
 	{	id: 6, nombre: 'Objetos como atributos',
 		resumen: 'En este capítulo se incluyen prácticas para que el alumno consolide sus conocimientos acerca del concepto de agragación, así como su habilidad para constuir clases que involucren el uso de clases existentes, de las cuales no se tien el código fuente, sólo se tiene el código ejecutable y documentación.', 
 		listaArchivos: [
 			{
-				nombre:'Alumno',
+				nombre:'Estacionamiento',
 				descripcion:'',
-				ruta:'Alumno.java',
+				ruta:'estacionamiento.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de la clase Alumno',
+				nombre:'Etiquetas',
 				descripcion:'',
-				ruta:'PruebaAlumno.java',
+				ruta:'etiquetas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de la clase Alumno (versión 2)',
+				nombre:'Rectángulos',
 				descripcion:'',
-				ruta:'PruebaAlumno2.java',
+				ruta:'ractangulos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de la clase Alumno (con parámetros en el main)',
+				nombre:'Triángulos',
 				descripcion:'',
-				ruta:'PruebaAlumnoParametros.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Cambios en variables y en arreglos',
-				descripcion:'',
-				ruta:'Cambios.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Sección escolar',
-				descripcion:'',
-				ruta:'SeccionEscolar.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Sección escolar (versión ordenara)',
-				descripcion:'',
-				ruta:'SeccionEscolarOrdenada.java',
+				ruta:'triangulos.zip',
 				tipo:'java'
 			}
 		]
@@ -211,130 +171,58 @@ export const CAPITULOS_PRACTICAS: Capitulo[] = [
 		resumen: 'En este capítulo se presentan prácticas para que el alumno se ejercite en el desarrollo de programas que manejan varios datos del mismo tipo, sea este primitivo o clase, agrupados estos en un objeto denominado arreglo y también se ejercite en el uso de instrucción de iteración.', 
 		listaArchivos: [
 			{
-				nombre:'Cuenta',
+				nombre:'Çartas',
 				descripcion:'',
-				ruta:'Cuenta.java',
+				ruta:'cartas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Cuenta con servicios',
+				nombre:'Conjuntos',
 				descripcion:'',
-				ruta:'CuentaConServicios.java',
+				ruta:'conjuntos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Uso de la clase Cuenta',
+				nombre:'Contestadora',
 				descripcion:'',
-				ruta:'UsaCuentas.java',
+				ruta:'contestadora.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Cuenta de crédito',
+				nombre:'Estadísticas',
 				descripcion:'',
-				ruta:'CuentaDeCredito.java',
+				ruta:'estadisticas.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Prueba de jerarquía de cuentas',
-				descripcion:'',
-				ruta:'PruebaCuentas.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Obra',
-				descripcion:'',
-				ruta:'Obra.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Libro',
-				descripcion:'',
-				ruta:'Libro.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Tesis',
-				descripcion:'',
-				ruta:'Tesis.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Artículo',
-				descripcion:'',
-				ruta:'Articulo.java',
-				tipo:'java'
-			},	
+			}
 		]
 	},
 	{	id: 8, nombre: 'Paso de parámetros',
 		resumen: 'En este capítulo se tienen prácticas para que el alumno refuerce sus conocimientos acerca del paso de parámetros por valor, la diferencia entre parámetro formal y parámetro real o actual, así como el paso de parámetros al método main. ', 
 		listaArchivos: [
 			{
-				nombre:'Cuenta con excepciones (versión 1)',
+				nombre:'Parámetros 1',
 				descripcion:'',
-				ruta:'Cuenta1.java',
+				ruta:'parametros1.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba excepciones cuenta',
+				nombre:'Parámetros 2',
 				descripcion:'',
-				ruta:'PruebaExcepcionesCuenta.java',
+				ruta:'parametros2.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Excepción bancaria',
+				nombre:'Parámetros punto',
 				descripcion:'',
-				ruta:'ExcepcionBancaria.java',
+				ruta:'paramsPunto.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Excepción monto negativo',
+				nombre:'Parámetros triángulo',
 				descripcion:'',
-				ruta:'ExcepcionMontoNegativo.java',
+				ruta:'paramsTriangulo.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Excepción retiro negativo',
-				descripcion:'',
-				ruta:'ExcepcionRetiroNegativo.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Excepción depósito negativo',
-				descripcion:'',
-				ruta:'ExcepcionDepositoNegativo.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Excepción falta de fondos',
-				descripcion:'',
-				ruta:'ExcepcionFaltaDeFondos.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Excepción crédito no autorizado',
-				descripcion:'',
-				ruta:'ExcepcionCreditoNoAutorizado.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba con excepciones bancarias',
-				descripcion:'',
-				ruta:'Cuenta.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba de excepciones propias',
-				descripcion:'',
-				ruta:'PruebaExcepcionesPropias.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba de excepciones con dos try-catch',
-				descripcion:'',
-				ruta:'ExcepcionesCon2Try.java',
-				tipo:'java'
-			},	
+			}
 		]
 	},
 	// Falta clase Contrato.java para compilar clase Nomina.java, Permanente.java, Horas.java, TiempoCompleto.java
@@ -342,260 +230,153 @@ export const CAPITULOS_PRACTICAS: Capitulo[] = [
 		resumen: 'En este capítulo se tienen prácticas que sirven para que el alumno se ejercite en la creación de jerarquías de herencia de clases, ya sea empezando de la raíz o bien especializando clases existentes. Además de que refuerce sus conocimientos acerca del concepto de polimorfismo y de datos protegidos. ', 
 		listaArchivos: [
 			{
-				nombre:'Empleado',
+				nombre:'Actas',
 				descripcion:'',
-				ruta:'Empleado.java',
+				ruta:'actas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Empleado temporal',
+				nombre:'Boletos',
 				descripcion:'',
-				ruta:'Temporal.java',
+				ruta:'boletos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Empleado permanente',
+				nombre:'Círculos',
 				descripcion:'',
-				ruta:'Permanente.java',
+				ruta:'circulos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Empleado por horas',
+				nombre:'Libros',
 				descripcion:'',
-				ruta:'PorHoras.java',
+				ruta:'libros.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Empleado de tiempo completo',
-				descripcion:'',
-				ruta:'TiempoCompleto.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Nómina',
-				descripcion:'',
-				ruta:'Nomina.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Interfaz inflable',
-				descripcion:'',
-				ruta:'Inflable.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Círculo',
-				descripcion:'',
-				ruta:'Circulo.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Rectángulo',
-				descripcion:'',
-				ruta:'Rectangulo.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba círculos inflables',
-				descripcion:'',
-				ruta:'PruebaCirculosInflables.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba de polimorfismo con interfaces',
-				descripcion:'',
-				ruta:'PruebaPolimorfismoInterfaces1.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Objeto mayor',
-				descripcion:'',
-				ruta:'ObjetoMayor.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Clase Persona',
-				descripcion:'',
-				ruta:'Persona.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Interfaz Clasificable',
-				descripcion:'',
-				ruta:'Clasificable.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Interfaz Solucionable',
-				descripcion:'',
-				ruta:'Solucionable.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Biomatemático',
-				descripcion:'',
-				ruta:'Biomatematico.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Programador',
-				descripcion:'',
-				ruta:'Programador.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Persona común',
-				descripcion:'',
-				ruta:'PersonaComun.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Otra prueba de polimorfismo con interfaces',
-				descripcion:'',
-				ruta:'PruebaPolimorfismoInterfaces.java',
-				tipo:'java'
-			},
+			}
 		]
 	},
 	{	id: 10, nombre: 'Excepciones',
 		resumen: 'En este capítulo se presentan prácticas para que el alumno se ejercite en el manejo de excepciones como un mecanismo para escribir programas robustos. Estas excepciones pueden ser de las proporcionadas por Java o bien desarrolladas para el programa particular que se esté desarrollando. El manejo de las excepciones incluye su lanzamiento, atrapado y recuperación. ', 
 		listaArchivos: [
 			{
-				nombre:'Persona',
+				nombre:'Círculo y arreglo',
 				descripcion:'',
-				ruta:'Persona.java',
+				ruta:'circuloYArreglo.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de serialización',
+				nombre:'Fechas',
 				descripcion:'',
-				ruta:'PruebaSerializacion.java',
+				ruta:'fechas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de deserialización',
+				nombre:'Horas',
 				descripcion:'',
-				ruta:'PruebaDeserializacion.java',
+				ruta:'horas.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Colección persistente',
+				nombre:'Racionales',
 				descripcion:'',
-				ruta:'ColeccionPersistente.java',
+				ruta:'racionales.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Prueba de la colección',
-				descripcion:'',
-				ruta:'PruebaColeccion.java',
-				tipo:'java'
-			},
+			}
 		]
 	},
 	{	id: 11, nombre: 'Clases abstractas',
 		resumen: 'Este capítulo contiene un conjunto de prácticas para que el alumno adquiera experiencia en la creación de jerarquías de clases que contengan al menos una clase que no puede definirse completamente al momento de su creación y obliga a que sus subclases implementen los métodos que no se pueden definir en ella. Estas clases se conocen como clases abstractas. ', 
 		listaArchivos: [
 			{
-				nombre:'Persona',
+				nombre:'Ajedrez',
 				descripcion:'',
-				ruta:'Persona.java',
+				ruta:'ajedrez.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de serialización',
+				nombre:'Animales',
 				descripcion:'',
-				ruta:'PruebaSerializacion.java',
+				ruta:'animales.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de deserialización',
+				nombre:'Colecciones',
 				descripcion:'',
-				ruta:'PruebaDeserializacion.java',
+				ruta:'colecciones.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Colección persistente',
+				nombre:'Figuras',
 				descripcion:'',
-				ruta:'ColeccionPersistente.java',
+				ruta:'figuras.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de la colección',
+				nombre:'Hormigas',
 				descripcion:'',
-				ruta:'PruebaColeccion.java',
+				ruta:'hormigas.zip',
 				tipo:'java'
 			},
+			{
+				nombre:'Polígonos',
+				descripcion:'',
+				ruta:'poligonos.zip',
+				tipo:'java'
+			}
 		]
 	},
 	{	id: 12, nombre: 'Interfaces',
 		resumen: 'En este capítulo se incluye una serie de prácticas para que el programador ejercite sus conocimientos acerca de la utilidad y programación de interfaces durante el desarrollo de sus programas. Las prácticas incluyen la implementación de interfaces proporcionadas por Java así como de interfaces definidas para la aplicación. ', 
 		listaArchivos: [
 			{
-				nombre:'Persona',
+				nombre:'Comparador',
 				descripcion:'',
-				ruta:'Persona.java',
+				ruta:'comparador.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de serialización',
+				nombre:'Conjuntos',
 				descripcion:'',
-				ruta:'PruebaSerializacion.java',
+				ruta:'conjuntos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de deserialización',
+				nombre:'Palabras',
 				descripcion:'',
-				ruta:'PruebaDeserializacion.java',
+				ruta:'palabras.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Colección persistente',
+				nombre:'Series',
 				descripcion:'',
-				ruta:'ColeccionPersistente.java',
+				ruta:'series.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Prueba de la colección',
-				descripcion:'',
-				ruta:'PruebaColeccion.java',
-				tipo:'java'
-			},
+			}
 		]
 	},
 	{	id: 13, nombre: 'Serialización',
 		resumen: 'El propósito de las práctias presentadas en este capítulo es que el alumno aprenda los pasos que deben seguirse para lograr que los objetos creados durante la ejecución de un programa persistan más allá de la ejecución del mismo mediante su almacenamiento en archivos en disco. También que conozca el procedimiento para recuperar objetos de archivos. Este proceso se conoce en Java como serializacioón de objetos. ', 
 		listaArchivos: [
 			{
-				nombre:'Persona',
+				nombre:'Diario',
 				descripcion:'',
-				ruta:'Persona.java',
+				ruta:'diario.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de serialización',
+				nombre:'Eventos',
 				descripcion:'',
-				ruta:'PruebaSerializacion.java',
+				ruta:'eventos.zip',
 				tipo:'java'
 			},
 			{
-				nombre:'Prueba de deserialización',
+				nombre:'Personas',
 				descripcion:'',
-				ruta:'PruebaDeserializacion.java',
+				ruta:'personas.zip',
 				tipo:'java'
-			},
-			{
-				nombre:'Colección persistente',
-				descripcion:'',
-				ruta:'ColeccionPersistente.java',
-				tipo:'java'
-			},
-			{
-				nombre:'Prueba de la colección',
-				descripcion:'',
-				ruta:'PruebaColeccion.java',
-				tipo:'java'
-			},
+			}
 		]
+
 	},
 
 ];

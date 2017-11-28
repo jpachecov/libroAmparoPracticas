@@ -1,0 +1,12 @@
+public class Millas2Kms {
+    public static void main(String[] pps) {
+	// Variable real real llamada millas
+	// Constante real llamada MILLAS-A-KILOMETROS
+	// Variable real llamada kilometros
+
+	// Asignacion de valor a la variable kilometros
+	System.out.println("***Convertidor millas a kilometros***");
+
+	System.out.println("Los kilometros son:" ); //Completar esta linea
+
+}
