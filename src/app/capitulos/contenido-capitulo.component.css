@@ -13,7 +13,7 @@ h3,h4{
 }
 
 .contenido-capitulo h3 {
-	color: #822727;
+	color: #1f421f;
     margin: 0px;
 
 }
@@ -31,14 +31,14 @@ h3,h4{
 
 #titulo-libro{
     padding-bottom: 5px;
-    border-bottom: 3px solid #822727;
+    border-bottom: 3px solid #1f421f;
     text-transform: uppercase;
     font-size: 30px;
 }
 #edicion {
     display: block;
     width: 100%;
-    color: #822727;
+    color: #1f421f;
     text-align: right;
 }
 #titulo-cap{
@@ -70,7 +70,7 @@ Avenir,Tahoma,sans-serif
     padding-left: 10px;
 }
 #lista-archivos li i {
-    color: #822727;
+    color: #1f421f;
 }
 
 #proceso {
