@@ -1,14 +1,56 @@
-Configuracion de apache
+///////////////////////////////////////////////////////
 
-sudo a2enmod proxy
+# Modulos de apache necesarios
 
-sudo a2enmod proxy_http
+a2enmod proxy
+
+a2enmod proxy_http
+
+//////////////////////////////////////////////////////
+
+# Agregar en 000-default.conf
 
 
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
 
-ProxyPass /node http://localhost:8000
+# Libro de Practicas
+<VirtualHost *:80>
+  ServerName practica.example.com
 
-// Pasar urls a angular
-https://github.com/mgechev/angular-seed/wiki/Deploying-prod-build-to-Apache-2
+  ProxyRequests off
+
+  <Proxy *>
+    Order deny,allow
+  </Proxy>
+
+  <Location / >
+    ProxyPass "http://localhost:3002/"
+    ProxyPassReverse "http://localhost:3002/"
+  </Location>
+</VirtualHost>
+
+#Libro de teoria
+<VirtualHost *:80>
+  ServerName teoria.example.com
+
+  ProxyRequests off
+
+  <Proxy *>
+    Order deny,allow
+  </Proxy>
+
+  <Location / >
+    ProxyPass "http://localhost:3001/"
+    ProxyPassReverse "http://localhost:3001/"
+  </Location>
+</VirtualHost>
+
+//////////////////////////////////////////////////////
+
+# Y en el archivo /etc/hosts configurar las ips
+
+127.0.0.1	practica.example.com
+127.0.0.2	teoria.example.com
+
+
