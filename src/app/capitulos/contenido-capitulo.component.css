@@ -30,6 +30,8 @@ h3,h4{
 }
 
 #titulo-libro{
+    display: block;
+    width: 100%;
     padding-bottom: 5px;
     border-bottom: 3px solid #1f421f;
     text-transform: uppercase;
@@ -42,9 +44,9 @@ h3,h4{
     text-align: right;
 }
 #titulo-cap{
-    display: block;
     padding: 13px 0px;
     font-size: 24px;
+    padding-left: 15px;
 }
 
 /**
@@ -82,4 +84,29 @@ Avenir,Tahoma,sans-serif
     display: block;
     width: 400px;
     margin: 0 auto;
+}
+
+#ico-nombre {
+    display: table;
+    padding-top: 35px;
+}
+
+#ico-nombre a, h3{
+    display: table-cell;
+}
+
+#ico-nombre h3 {
+    vertical-align: middle;
+}
+
+#ico {
+/*
+    border: solid 2px #822727;
+    border-radius: 100%;
+*/
+}
+
+#ico img {
+    width: 80px;
+    height:80px;
 }
