@@ -1,0 +1,14 @@
+Configuracion de apache
+
+sudo a2enmod proxy
+
+sudo a2enmod proxy_http
+
+
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+
+ProxyPass /node http://localhost:8000
+
+// Pasar urls a angular
+https://github.com/mgechev/angular-seed/wiki/Deploying-prod-build-to-Apache-2
