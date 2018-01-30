@@ -1,0 +1,82 @@
+/**
+ *  Clase <b>Racional</b>
+ *  <br>
+ *  Esta clase se encarga de implementar n&uacute;meros racionales.
+ */
+public class Racional {
+   
+    /**
+     *  Entero que representa el nominador del racional.
+     */
+    private int nominador;
+    
+    /**
+     *  Entero que representa el denominador del racional.
+     */
+    private int denominador;
+    
+    /**
+     *  Constructor que recibe como par&aacute;metro dos n&uacute;meros enteros
+     *  que ser&aacute;n el nominador y el denominador respectivamente.
+     *  @param nuevoNumerador Numerador del nuevo racional.
+     *  @param nuevoDenominador Denominador del nuevo racional.
+     */
+    public Racional(int nuevoNumerador, int nuevoDenominador) {
+
+    }
+    
+    /**
+     *  Metodo que recibe un racional como par&aacute;metro y devuelve 
+     *  la suma de este con el racional que llama al metodo.
+     *  @param sumando Racional con el que se har&aacute; la suma.
+     *  @return Racional obtenido de efectuar la operacion de suma.
+     */
+    public Racional sumar(Racional sumando){
+        return new Racional(0, 0);
+    }
+    
+    /**
+     *  Metodo que recibe un racional como par&aacute;metro y devuelve 
+     *  la multiplicacion de este con el racional que llama al metodo.
+     *  @param factor Racional con el que se har&aacute; la multiplicacion.
+     *  @return Racional obtenido de efectuar la operacion de multiplicacion.
+     */
+    public Racional multiplicar(Racional factor){
+        return new Racional(0, 0);
+    }
+    
+    /**
+     *  Metodo que devuelve la representacion en cadena de el racional
+     *  que lo llama.
+     *  @return Representacion en cadena del racional que llama al metodo.
+     */
+    public String toString(){
+        return "";
+    }
+    
+    /**
+     *  Metodo que recibe un objeto que se supone es otro Racional y determina
+     *  si este y el Racional que llama al metodo son o no iguales.
+     *  @param comparacion Racional con el que se har&aacute; la comparacion.
+     *  @return true Si son iguales. false En caso contrario.
+     */
+    public boolean equals(Object comparacion){
+        return false;
+    }    
+    
+    /**
+     *  Metodo que devuelve el nominador del racional.
+     *  @return El nominador del racional.
+     */
+    public int obtenerNominador(){
+        return nominador;
+    }
+    
+    /**
+     *  Metodo que devuelve el denominador del racional.
+     *  @return El denominador del racional.
+     */
+    public int obtenerDenominador(){
+        return denominador;
+    }
+}

@@ -1,0 +1,44 @@
+public class Etiqueta {
+    private String destinatario;
+    private String remitente;
+    private Fecha fenvio;
+    private Direccion deDonde;
+    private Direccion paraDonde;
+    private double peso;
+
+    /**
+     * Constructor que recibe toda la informacion
+     * @param para -- cadena con el nombre del destinatario
+     * @param de -- cadena con el nombre del remitente
+     * @param envio -- fecha de envio
+     * @param deDonde -- direccion del remitente
+     * @param paraDonde -- direccion del destinatario
+     * @param peso -- peso del paquete
+     */
+    public Etiqueta (String para, String de, Fecha envio, Direccion deDonde,
+		     Direccion paraDonde, double peso) {
+	destinatario = para;
+	remitente = de;
+	fenvio = envio;
+	this.deDonde = deDonde;
+	this.paraDonde = paraDonde;
+	this.peso = peso;
+    }
+
+    public String toString() {
+	return "De: \t"+ remitente + "\nPara: \t" + destinatario +
+	    "\nDestino: "+ paraDonde + "\nFecha:\t" + fenvio + 
+	    "\nPeso:\t" + peso + "kg";
+    }
+
+    public static void main(String [] pps) {
+	Direccion dir = new Direccion("Tlalcoligia 98", "Tlalcoligia", "Mexico D.F", "14000","Mexico");
+
+	Direccion dir2 = new Direccion("Calle Coral # 425", "Vista Hermosa", 
+				        "Cancun", "6789", "Mexico");
+
+	Etiqueta etiq = new Etiqueta("Jesus Vega Colin", "Amparo Lopez Gaona",
+				     new Fecha(1,5), dir, dir2, 20);
+	System.out.println(etiq);
+    }
+}
